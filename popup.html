@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Copy Task — módulos</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <header><img src="icons/icon-48.png" alt="" width="40" height="40"><div><h1>Copy Task</h1><p>Ferramentas para Azure DevOps</p></div></header>
+  <main>
+    <h2>Seus módulos</h2>
+    <label><span><strong>Copiar na task</strong><small>Mensagem de commit no Work Item aberto.</small></span><input type="checkbox" id="copyTask" disabled></label>
+    <label><span><strong>Copiar na PR</strong><small>Copiar os work items vinculados à PR.</small></span><input type="checkbox" id="copyPr" disabled></label>
+    <label><span><strong>Mostrar projetos</strong><small>Identificar o projeto na seleção de vínculos.</small></span><input type="checkbox" id="projects" disabled></label>
+    <p id="status" role="status" aria-live="polite">Carregando preferências…</p>
+    <p class="hint">Após mudar uma opção, salve suas edições no Azure e atualize a página para aplicar.</p>
+  </main>
+</body>
+</html>

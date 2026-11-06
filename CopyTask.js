@@ -1,6 +1,8 @@
 // @ts-check
 
-(() => {
+(async () => {
+  const modules = await (globalThis.azureToolsModulesReady || {});
+  if (modules.copyTask === false) return;
   const BUTTON_CLASS = 'btn-copiar-task';
   const TITLE_SELECTOR = [
     '[placeholder="Enter title"]',
@@ -156,7 +158,11 @@
       event.preventDefault();
       event.stopPropagation();
 
-      const titulo = obterTitulo(title);
+      const titulo = obterTitulo(raiz.querySelector(TITLE_SELECTOR) || title);
+      if (!titulo) {
+        alert('Não foi possível obter o título do work item.');
+        return;
+      }
       const tags = obterTags(raiz);
 
       if (tags.length === 0) {
@@ -261,10 +267,10 @@
 
     if (!elemento) return [];
 
-    return (elemento.textContent || '')
+    return [...new Set((elemento.innerText || elemento.textContent || '')
       .split('\n')
       .map((tag) => tag.trim())
-      .filter((tag) => tag && !/^(add tag|adicionar tag)$/i.test(tag));
+      .filter((tag) => tag && !/^(add tag|adicionar tag)$/i.test(tag)))];
   }
 
   function obterNumeroWorkItem() {

@@ -1,6 +1,8 @@
 // @ts-check
 
-(() => {
+(async () => {
+  const modules = await (globalThis.azureToolsModulesReady || {});
+  if (modules.copyPr === false) return;
   const CLASSE_BOTAO = 'btn-copiar-work-item-pr';
   const ATRIBUTO_INSTALADO = 'data-botao-copiar-commit';
 
