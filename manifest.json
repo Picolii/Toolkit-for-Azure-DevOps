@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Copy Task for Azure DevOps",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Copia work items como commits e identifica projetos na seleção de vínculos do Azure DevOps.",
   "permissions": ["storage"],
   "action": {

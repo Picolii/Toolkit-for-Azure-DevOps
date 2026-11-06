@@ -16,6 +16,13 @@
     <label><span><strong>Mostrar projetos</strong><small>Identificar o projeto na seleção de vínculos.</small></span><input type="checkbox" id="projects" disabled></label>
     <p id="status" role="status" aria-live="polite">Carregando preferências…</p>
     <p class="hint">Após mudar uma opção, salve suas edições no Azure e atualize a página para aplicar.</p>
+    <section class="updates" aria-label="Atualizações">
+      <div class="update-heading"><strong>Atualizações</strong><span id="version"></span></div>
+      <p class="hint">A versão da loja atualiza automaticamente pelo navegador.</p>
+      <button type="button" id="check-update">Verificar atualização</button>
+      <p id="update-status" role="status" aria-live="polite"></p>
+      <details><summary>Instalou por uma pasta?</summary><p class="hint">Extraia os arquivos novos na mesma pasta usada na instalação. Abra edge://extensions (ou chrome://extensions), clique em Recarregar no cartão da extensão e atualize a página do Azure. Não precisa remover a extensão.</p></details>
+    </section>
   </main>
 </body>
 </html>

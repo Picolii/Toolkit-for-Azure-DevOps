@@ -65,13 +65,13 @@
       badge.className = CLASS;
       badge.dataset.itemId = id;
       // Inline content adds no selectable/focusable controls or fixed row height.
-      badge.style.cssText = 'display:inline-block;max-width:45%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;margin-inline-start:8px;padding:1px 6px;border:1px solid currentColor;border-radius:4px;font-size:11px;line-height:16px;pointer-events:none;';
+      badge.style.cssText = 'display:inline-block;box-sizing:border-box;flex:0 0 auto;width:40%;min-width:140px;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;margin-inline-start:8px;padding:1px 6px;border:1px solid currentColor;border-radius:4px;font-size:12px;line-height:18px;';
       row.appendChild(badge);
     }
     const own = Boolean(current) && project.toLowerCase() === current.toLowerCase();
-    const text = own ? `${project} · Projeto atual` : project;
+    const text = own ? `★ ${project}` : project;
     if (badge.textContent !== text) badge.textContent = text;
-    badge.title = `Projeto: ${project}`;
+    badge.title = `Projeto: ${project}${own ? ' · Projeto atual' : ''}`;
     badge.style.color = own ? 'var(--communication-foreground, #0078d4)' : 'inherit';
   }
 

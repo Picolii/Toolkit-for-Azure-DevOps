@@ -9,3 +9,11 @@ input { width:19px; height:19px; accent-color:#0078d4; flex-shrink:0; cursor:poi
 input:focus-visible { outline:2px solid #009fe3; outline-offset:4px; }
 #status { min-height:18px; font-size:12px; margin:16px 0 8px; }
 .hint { font-size:12px; line-height:1.5; opacity:.7; margin:0; }
+.updates { border-top:1px solid #80808040; margin-top:18px; padding-top:16px; }
+.update-heading { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+#version { font-size:12px; opacity:.7; }
+#check-update { margin-top:12px; padding:8px 12px; border:1px solid #80808060; border-radius:5px; background:light-dark(#fff,#253449); color:inherit; cursor:pointer; font:inherit; font-size:12px; }
+#check-update:disabled { opacity:.6; cursor:wait; }
+#check-update:focus-visible { outline:2px solid #009fe3; outline-offset:2px; }
+#update-status { font-size:12px; line-height:1.5; margin:8px 0; }
+summary { cursor:pointer; font-size:12px; margin-top:10px; } details p { padding-top:8px; }
