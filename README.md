@@ -1,8 +1,8 @@
 # Copy Task for Azure DevOps
 
-Version **1.1.1**
+Version **1.1.2**
 
-Improve project label visibility and add update checks
+Use automatic compact project label widths
 
 ## Features
 
@@ -10,7 +10,7 @@ System.Object[]
 
 ## Install and update
 
-Use the archived package [dist/copy-task-for-azure-devops-1.1.1.zip](dist/copy-task-for-azure-devops-1.1.1.zip), or load the repository folder in developer mode at edge://extensions or chrome://extensions.
+Use the archived package [dist/copy-task-for-azure-devops-1.1.2.zip](dist/copy-task-for-azure-devops-1.1.2.zip), or load the repository folder in developer mode at edge://extensions or chrome://extensions.
 For local updates, replace files in the same installation folder, reload the extension and refresh Azure. Store installations receive approved updates through the browser.
 
 ## Privacy and support

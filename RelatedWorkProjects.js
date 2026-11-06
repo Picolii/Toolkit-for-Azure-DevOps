@@ -65,7 +65,7 @@
       badge.className = CLASS;
       badge.dataset.itemId = id;
       // Inline content adds no selectable/focusable controls or fixed row height.
-      badge.style.cssText = 'display:inline-block;box-sizing:border-box;flex:0 0 auto;width:40%;min-width:140px;max-width:240px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;margin-inline-start:8px;padding:1px 6px;border:1px solid currentColor;border-radius:4px;font-size:12px;line-height:18px;';
+      badge.style.cssText = 'display:inline-block;box-sizing:border-box;flex:0 0 auto;width:auto;min-width:0;max-width:min(35%, 180px);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;vertical-align:middle;margin-inline-start:8px;padding:1px 6px;border:1px solid currentColor;border-radius:4px;font-size:12px;line-height:18px;';
       row.appendChild(badge);
     }
     const own = Boolean(current) && project.toLowerCase() === current.toLowerCase();
