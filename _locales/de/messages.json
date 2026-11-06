@@ -1,0 +1,119 @@
+{
+  "copy": {
+    "message": "Task kopieren"
+  },
+  "copying": {
+    "message": "Task wird kopiert…"
+  },
+  "copied": {
+    "message": "Kopiert!"
+  },
+  "titleError": {
+    "message": "Der Titel des Arbeitselements konnte nicht gelesen werden."
+  },
+  "tagsError": {
+    "message": "Füge dem Arbeitselement mindestens ein Tag hinzu. Der Commit wurde nicht kopiert."
+  },
+  "idError": {
+    "message": "Die ID des Arbeitselements konnte nicht ermittelt werden."
+  },
+  "clipboardError": {
+    "message": "Der Browser hat den Zugriff auf die Zwischenablage blockiert."
+  },
+  "copyError": {
+    "message": "Das Arbeitselement konnte nicht kopiert werden."
+  },
+  "unknownError": {
+    "message": "Unbekannter Fehler."
+  },
+  "apiError": {
+    "message": "Die Azure-API hat HTTP $1 zurückgegeben."
+  },
+  "projectError": {
+    "message": "Das Projekt konnte nicht aus der URL ermittelt werden."
+  },
+  "project": {
+    "message": "Projekt"
+  },
+  "currentProject": {
+    "message": "Aktuelles Projekt"
+  },
+  "subtitle": {
+    "message": "Tools für Azure DevOps"
+  },
+  "modules": {
+    "message": "Deine Module"
+  },
+  "copyTask": {
+    "message": "In Tasks kopieren"
+  },
+  "copyTaskHelp": {
+    "message": "Commit-Nachricht aus dem geöffneten Arbeitselement."
+  },
+  "copyPr": {
+    "message": "In PRs kopieren"
+  },
+  "copyPrHelp": {
+    "message": "Mit einem Pull Request verknüpfte Arbeitselemente kopieren."
+  },
+  "projects": {
+    "message": "Projekte anzeigen"
+  },
+  "projectsHelp": {
+    "message": "Projekte bei der Auswahl verknüpfter Elemente erkennen."
+  },
+  "loading": {
+    "message": "Einstellungen werden geladen…"
+  },
+  "refreshHint": {
+    "message": "Speichere nach einer Änderung deine Arbeit in Azure und lade die Seite neu."
+  },
+  "updates": {
+    "message": "Updates"
+  },
+  "autoUpdates": {
+    "message": "Die Store-Version wird automatisch vom Browser aktualisiert."
+  },
+  "checkUpdate": {
+    "message": "Nach Updates suchen"
+  },
+  "checking": {
+    "message": "Browser-Updatedienst wird abgefragt…"
+  },
+  "available": {
+    "message": "Ein Update ist verfügbar. Schließe dieses Fenster zum Abschließen und lade Azure danach neu."
+  },
+  "throttled": {
+    "message": "Der Browser hat kürzlich geprüft. Versuche es später erneut; automatische Updates bleiben aktiv."
+  },
+  "noUpdate": {
+    "message": "Kein Update verfügbar. Neue Versionen müssen im Store freigegeben werden. Für lokale Installationen siehe unten."
+  },
+  "updateError": {
+    "message": "Prüfung nicht verfügbar. Nutze unter edge://extensions Aktualisieren für den Store oder Neu laden nach dem Ersetzen lokaler Dateien."
+  },
+  "localInstall": {
+    "message": "Aus einem Ordner installiert?"
+  },
+  "localHelp": {
+    "message": "Entpacke die neuen Dateien in denselben Ordner. Öffne edge://extensions (oder chrome://extensions), klicke auf Neu laden und lade Azure neu. Keine Deinstallation nötig."
+  },
+  "saved": {
+    "message": "Einstellungen gespeichert. Lade Azure neu."
+  },
+  "saveError": {
+    "message": "Speichern fehlgeschlagen. Versuche es erneut."
+  },
+  "choose": {
+    "message": "Wähle die gewünschten Module."
+  },
+  "loadError": {
+    "message": "Einstellungen konnten nicht geladen werden."
+  },
+  "description": {
+    "message": "Modulare Tools für Azure DevOps: Commits kopieren und Projekte verknüpfter Arbeitselemente erkennen."
+  },
+  "extensionName": {
+    "message": "Toolkit for Azure DevOps"
+  }
+}

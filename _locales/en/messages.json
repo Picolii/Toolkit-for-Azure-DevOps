@@ -1,0 +1,119 @@
+{
+  "copy": {
+    "message": "Copy task"
+  },
+  "copying": {
+    "message": "Copying task…"
+  },
+  "copied": {
+    "message": "Copied!"
+  },
+  "titleError": {
+    "message": "Could not read the work item title."
+  },
+  "tagsError": {
+    "message": "Add at least one tag to the work item. The commit was not copied."
+  },
+  "idError": {
+    "message": "Could not identify the work item ID."
+  },
+  "clipboardError": {
+    "message": "The browser blocked clipboard access."
+  },
+  "copyError": {
+    "message": "Could not copy the work item."
+  },
+  "unknownError": {
+    "message": "Unknown error."
+  },
+  "apiError": {
+    "message": "Azure API returned HTTP $1."
+  },
+  "projectError": {
+    "message": "Could not identify the project from the URL."
+  },
+  "project": {
+    "message": "Project"
+  },
+  "currentProject": {
+    "message": "Current project"
+  },
+  "subtitle": {
+    "message": "Tools for Azure DevOps"
+  },
+  "modules": {
+    "message": "Your modules"
+  },
+  "copyTask": {
+    "message": "Copy in work items"
+  },
+  "copyTaskHelp": {
+    "message": "Commit message from the open work item."
+  },
+  "copyPr": {
+    "message": "Copy in pull requests"
+  },
+  "copyPrHelp": {
+    "message": "Copy work items linked to a pull request."
+  },
+  "projects": {
+    "message": "Show projects"
+  },
+  "projectsHelp": {
+    "message": "Identify projects when selecting linked items."
+  },
+  "loading": {
+    "message": "Loading preferences…"
+  },
+  "refreshHint": {
+    "message": "After changing an option, save your work in Azure and refresh the page to apply."
+  },
+  "updates": {
+    "message": "Updates"
+  },
+  "autoUpdates": {
+    "message": "The store version updates automatically through the browser."
+  },
+  "checkUpdate": {
+    "message": "Check for updates"
+  },
+  "checking": {
+    "message": "Checking the browser update service…"
+  },
+  "available": {
+    "message": "An update is available. Close this panel to let the browser finish updating, then refresh Azure."
+  },
+  "throttled": {
+    "message": "The browser checked recently. Try again later; automatic store updates remain enabled."
+  },
+  "noUpdate": {
+    "message": "No update is available from the browser. New versions must be approved in the store. For a local installation, follow the instructions below."
+  },
+  "updateError": {
+    "message": "Update check unavailable. Open edge://extensions: use Update for store installs or Reload after replacing local files."
+  },
+  "localInstall": {
+    "message": "Installed from a folder?"
+  },
+  "localHelp": {
+    "message": "Extract the new files into the same installation folder. Open edge://extensions (or chrome://extensions), click Reload on the extension card, then refresh Azure. No need to uninstall."
+  },
+  "saved": {
+    "message": "Preferences saved. Refresh Azure to apply."
+  },
+  "saveError": {
+    "message": "Could not save. Please try again."
+  },
+  "choose": {
+    "message": "Choose the modules you want to use."
+  },
+  "loadError": {
+    "message": "Could not load preferences."
+  },
+  "description": {
+    "message": "Modular tools for Azure DevOps: copy commit messages and identify projects in related-work selections."
+  },
+  "extensionName": {
+    "message": "Toolkit for Azure DevOps"
+  }
+}

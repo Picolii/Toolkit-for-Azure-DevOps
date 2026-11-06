@@ -1,0 +1,119 @@
+{
+  "copy": {
+    "message": "Copia attività"
+  },
+  "copying": {
+    "message": "Copia in corso…"
+  },
+  "copied": {
+    "message": "Copiato!"
+  },
+  "titleError": {
+    "message": "Impossibile leggere il titolo dell’elemento di lavoro."
+  },
+  "tagsError": {
+    "message": "Aggiungi almeno un tag all’elemento di lavoro. Il commit non è stato copiato."
+  },
+  "idError": {
+    "message": "Impossibile identificare l’ID dell’elemento di lavoro."
+  },
+  "clipboardError": {
+    "message": "Il browser ha bloccato l’accesso agli appunti."
+  },
+  "copyError": {
+    "message": "Impossibile copiare l’elemento di lavoro."
+  },
+  "unknownError": {
+    "message": "Errore sconosciuto."
+  },
+  "apiError": {
+    "message": "L’API di Azure ha restituito HTTP $1."
+  },
+  "projectError": {
+    "message": "Impossibile identificare il progetto dall’URL."
+  },
+  "project": {
+    "message": "Progetto"
+  },
+  "currentProject": {
+    "message": "Progetto attuale"
+  },
+  "subtitle": {
+    "message": "Strumenti per Azure DevOps"
+  },
+  "modules": {
+    "message": "I tuoi moduli"
+  },
+  "copyTask": {
+    "message": "Copia nelle attività"
+  },
+  "copyTaskHelp": {
+    "message": "Messaggio di commit dall’elemento di lavoro aperto."
+  },
+  "copyPr": {
+    "message": "Copia nelle PR"
+  },
+  "copyPrHelp": {
+    "message": "Copia gli elementi di lavoro collegati a una PR."
+  },
+  "projects": {
+    "message": "Mostra progetti"
+  },
+  "projectsHelp": {
+    "message": "Identifica i progetti nella selezione dei collegamenti."
+  },
+  "loading": {
+    "message": "Caricamento preferenze…"
+  },
+  "refreshHint": {
+    "message": "Dopo aver modificato un’opzione, salva il lavoro in Azure e aggiorna la pagina per applicarla."
+  },
+  "updates": {
+    "message": "Aggiornamenti"
+  },
+  "autoUpdates": {
+    "message": "La versione dello store si aggiorna automaticamente tramite il browser."
+  },
+  "checkUpdate": {
+    "message": "Cerca aggiornamenti"
+  },
+  "checking": {
+    "message": "Verifica del servizio di aggiornamento del browser…"
+  },
+  "available": {
+    "message": "È disponibile un aggiornamento. Chiudi il pannello per completarlo, poi aggiorna Azure."
+  },
+  "throttled": {
+    "message": "Il browser ha verificato di recente. Riprova più tardi; gli aggiornamenti automatici restano attivi."
+  },
+  "noUpdate": {
+    "message": "Nessun aggiornamento disponibile. Le nuove versioni devono essere approvate nello store. Per installazioni locali, segui le istruzioni sotto."
+  },
+  "updateError": {
+    "message": "Verifica non disponibile. In edge://extensions usa Aggiorna per lo store o Ricarica dopo aver sostituito i file locali."
+  },
+  "localInstall": {
+    "message": "Installata da una cartella?"
+  },
+  "localHelp": {
+    "message": "Estrai i nuovi file nella stessa cartella. Apri edge://extensions (o chrome://extensions), fai clic su Ricarica e aggiorna Azure. Non serve disinstallare."
+  },
+  "saved": {
+    "message": "Preferenze salvate. Aggiorna Azure per applicarle."
+  },
+  "saveError": {
+    "message": "Impossibile salvare. Riprova."
+  },
+  "choose": {
+    "message": "Scegli i moduli da usare."
+  },
+  "loadError": {
+    "message": "Impossibile caricare le preferenze."
+  },
+  "description": {
+    "message": "Strumenti modulari per Azure DevOps: copia commit e identifica i progetti nella selezione degli elementi correlati."
+  },
+  "extensionName": {
+    "message": "Toolkit for Azure DevOps"
+  }
+}

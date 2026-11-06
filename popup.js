@@ -1,4 +1,11 @@
 (() => {
+  const t = globalThis.toolkitText;
+  document.documentElement.lang = chrome.i18n?.getUILanguage() || 'en';
+  document.title = t('extensionName');
+  document.querySelectorAll('[data-i18n]').forEach((element) => {
+    element.textContent = t(element.dataset.i18n);
+  });
+  document.querySelector('.updates')?.setAttribute('aria-label', t('updates'));
   const ids = ['copyTask', 'copyPr', 'projects'];
   const status = document.getElementById('status');
   const updateButton = document.getElementById('check-update');
@@ -7,18 +14,18 @@
     updateButton.addEventListener('click', async () => {
       const message = document.getElementById('update-status');
       updateButton.disabled = true;
-      message.textContent = 'Consultando o serviço de atualizações do navegador…';
+      message.textContent = t('checking');
       try {
         const result = await chrome.runtime.requestUpdateCheck();
         if (result.status === 'update_available') {
-          message.textContent = `Versão ${result.version || 'nova'} disponível. Feche este painel para o navegador concluir a atualização; depois atualize a página do Azure.`;
+          message.textContent = t('available') + (result.version ? ` (${result.version})` : '');
         } else if (result.status === 'throttled') {
-          message.textContent = 'O navegador verificou recentemente. Tente mais tarde; a atualização automática continua ativa para a versão da loja.';
+          message.textContent = t('throttled');
         } else {
-          message.textContent = 'Nenhuma atualização disponibilizada pelo navegador. Versões novas precisam estar aprovadas na loja. Se instalou por pasta, siga as instruções abaixo.';
+          message.textContent = t('noUpdate');
         }
       } catch {
-        message.textContent = 'Verificação indisponível. Em edge://extensions, use Atualizar para a versão da loja ou Recarregar após substituir os arquivos da pasta local.';
+        message.textContent = t('updateError');
       } finally {
         updateButton.disabled = false;
       }
@@ -37,18 +44,18 @@
             await chrome.storage.local.set({ modules: Object.fromEntries(
               ids.map((key) => [key, document.getElementById(key).checked]),
             ) });
-            status.textContent = 'Preferências salvas. Atualize a página do Azure.';
+            status.textContent = t('saved');
           } catch {
             input.checked = !input.checked;
-            status.textContent = 'Não foi possível salvar. Tente novamente.';
+            status.textContent = t('saveError');
           } finally {
             ids.forEach((key) => { document.getElementById(key).disabled = false; });
           }
         });
       }
-      status.textContent = 'Escolha os módulos que deseja usar.';
+      status.textContent = t('choose');
     } catch {
-      status.textContent = 'Não foi possível carregar as preferências.';
+      status.textContent = t('loadError');
     }
   }
   init();

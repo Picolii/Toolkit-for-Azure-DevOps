@@ -3,6 +3,7 @@
 (async () => {
   const modules = await (globalThis.azureToolsModulesReady || {});
   if (modules.copyTask === false) return;
+  const t = globalThis.toolkitText || ((key) => key);
   const BUTTON_CLASS = 'btn-copiar-task';
   const TITLE_SELECTOR = [
     '[placeholder="Enter title"]',
@@ -142,7 +143,7 @@
     button.type = 'button';
     button.setAttribute('role', 'menuitem');
     button.setAttribute('tabindex', '0');
-    button.setAttribute('aria-label', 'Copiar task');
+    button.setAttribute('aria-label', t('copy'));
 
     button.innerHTML = `
       <span class="fluent-icons-enabled">
@@ -151,8 +152,9 @@
           class="left-icon flex-noshrink fabric-icon ms-Icon--Copy medium"
         ></span>
       </span>
-      <span class="bolt-button-text body-m">Copiar task</span>
+      <span class="bolt-button-text body-m"></span>
     `;
+    button.querySelector('.bolt-button-text').textContent = t('copy');
 
     button.addEventListener('click', async (event) => {
       event.preventDefault();
@@ -160,17 +162,13 @@
 
       const titulo = obterTitulo(raiz.querySelector(TITLE_SELECTOR) || title);
       if (!titulo) {
-        alert('Não foi possível obter o título do work item.');
+        alert(t('titleError'));
         return;
       }
       const tags = obterTags(raiz);
 
       if (tags.length === 0) {
-        alert(
-          '⚠ Erro ao obter tags!\n\n' +
-            'Verifique se a tarefa possui tags.\n' +
-            '❌ O commit não foi copiado!',
-        );
+        alert(t('tagsError'));
 
         return;
       }
@@ -178,7 +176,7 @@
       const numero = obterNumeroWorkItem();
 
       if (!numero) {
-        alert('❌ Não foi possível identificar o número do work item.');
+        alert(t('idError'));
         return;
       }
 
@@ -194,10 +192,10 @@
 
       try {
         await copiar(commit);
-        alert(`Copiado!\n\n${commit}`);
+        alert(`${t('copied')}\n\n${commit}`);
       } catch (error) {
         console.error('Erro ao copiar work item:', error);
-        alert('❌ O navegador bloqueou a área de transferência.');
+        alert(t('clipboardError'));
       }
     });
 
@@ -308,7 +306,7 @@
     textarea.remove();
 
     if (!copiado) {
-      throw new Error('Não foi possível copiar o texto.');
+      throw new Error(t('clipboardError'));
     }
   }
 

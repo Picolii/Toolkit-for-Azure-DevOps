@@ -3,6 +3,7 @@
 (async () => {
   const modules = await (globalThis.azureToolsModulesReady || {});
   if (modules.copyPr === false) return;
+  const t = globalThis.toolkitText || ((key) => key);
   const CLASSE_BOTAO = 'btn-copiar-work-item-pr';
   const ATRIBUTO_INSTALADO = 'data-botao-copiar-commit';
 
@@ -156,9 +157,9 @@
 
     button.type = 'button';
 
-    button.setAttribute('data-tooltip-text', 'Copiar task');
+    button.setAttribute('data-tooltip-text', t('copy'));
 
-    button.setAttribute('aria-label', `Copiar task ${numero}`);
+    button.setAttribute('aria-label', `${t('copy')} ${numero}`);
 
     const estiloRemover = window.getComputedStyle(botaoRemover);
 
@@ -273,7 +274,7 @@
     const tooltip = document.createElement('div');
 
     tooltip.textContent =
-      button.getAttribute('data-tooltip-text') || 'Copiar task';
+      button.getAttribute('data-tooltip-text') || t('copy');
 
     tooltip.setAttribute('role', 'tooltip');
 
@@ -351,15 +352,11 @@
       const tags = obterTags(campos['System.Tags']);
 
       if (!titulo) {
-        throw new Error('Não foi possível obter o título.');
+        throw new Error(t('titleError'));
       }
 
       if (tags.length === 0) {
-        alert(
-          '⚠ Erro ao obter tags!\n\n' +
-            'Verifique se o work item possui tags.\n' +
-            '❌ O commit não foi copiado!',
-        );
+        alert(t('tagsError'));
 
         return;
       }
@@ -381,14 +378,14 @@
 
       await copiar(commit);
 
-      alert(`Copiado!\n\n${commit}`);
+      alert(`${t('copied')}\n\n${commit}`);
     } catch (error) {
       console.error(`Erro ao copiar work item ${numero}:`, error);
 
       const mensagem =
-        error instanceof Error ? error.message : 'Erro desconhecido.';
+        error instanceof Error ? error.message : t('unknownError');
 
-      alert('❌ Não foi possível copiar o work item.\n\n' + mensagem);
+      alert(t('copyError') + '\n\n' + mensagem);
     } finally {
       definirCarregando(button, false);
     }
@@ -417,7 +414,7 @@
       }
 
       throw new Error(
-        `A API do Azure retornou ${response.status}.` +
+        t('apiError', [String(response.status)]) +
           (detalhe ? `\n${detalhe}` : ''),
       );
     }
@@ -437,7 +434,7 @@
     const prefixo = resultadoLink?.[1] || resultadoPagina?.[1];
 
     if (!prefixo) {
-      throw new Error('Não foi possível identificar o projeto pela URL.');
+      throw new Error(t('projectError'));
     }
 
     const urlApi = new URL(location.origin);
@@ -545,7 +542,7 @@
 
     button.setAttribute(
       'data-tooltip-text',
-      carregando ? 'Copiando task...' : 'Copiar task',
+      carregando ? t('copying') : t('copy'),
     );
   }
 
@@ -577,7 +574,7 @@
     textarea.remove();
 
     if (!copiado) {
-      throw new Error('O navegador bloqueou a área de transferência.');
+      throw new Error(t('clipboardError'));
     }
   }
 

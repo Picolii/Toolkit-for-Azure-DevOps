@@ -1,8 +1,8 @@
 # Toolkit for Azure DevOps
 
-Version **1.1.4**
+Version **1.2.0**
 
-Rename extension to Toolkit for Azure DevOps
+Localize interface for nine languages
 
 ## Features
 
@@ -10,7 +10,7 @@ System.Object[]
 
 ## Install and update
 
-Use the archived package [dist/toolkit-for-azure-devops-1.1.4.zip](dist/toolkit-for-azure-devops-1.1.4.zip), or load the repository folder in developer mode at edge://extensions or chrome://extensions.
+Use the archived package [dist/toolkit-for-azure-devops-1.2.0.zip](dist/toolkit-for-azure-devops-1.2.0.zip), or load the repository folder in developer mode at edge://extensions or chrome://extensions.
 For local updates, replace files in the same installation folder, reload the extension and refresh Azure. Store installations receive approved updates through the browser.
 
 ## Privacy and support

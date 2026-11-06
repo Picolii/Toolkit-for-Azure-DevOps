@@ -1,11 +1,12 @@
 {
   "manifest_version": 3,
-  "name": "Toolkit for Azure DevOps",
-  "version": "1.1.4",
-  "description": "Modular productivity tools for Azure DevOps: commit copying, project labels, and workflow shortcuts.",
+  "name": "__MSG_extensionName__",
+  "version": "1.2.0",
+  "default_locale": "en",
+  "description": "__MSG_description__",
   "permissions": ["storage"],
   "action": {
-    "default_title": "Toolkit — módulos",
+    "default_title": "__MSG_extensionName__",
     "default_popup": "popup.html"
   },
   "icons": {
@@ -21,6 +22,7 @@
         "https://*.visualstudio.com/*"
       ],
       "js": [
+        "I18n.js",
         "ModuleSettings.js",
         "CopyTask.js",
         "PR_WorkItem_CopyTask.js",

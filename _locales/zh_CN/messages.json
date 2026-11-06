@@ -1,0 +1,119 @@
+{
+  "copy": {
+    "message": "复制任务"
+  },
+  "copying": {
+    "message": "正在复制…"
+  },
+  "copied": {
+    "message": "已复制！"
+  },
+  "titleError": {
+    "message": "无法读取工作项标题。"
+  },
+  "tagsError": {
+    "message": "请为工作项添加至少一个标签。未复制提交信息。"
+  },
+  "idError": {
+    "message": "无法识别工作项 ID。"
+  },
+  "clipboardError": {
+    "message": "浏览器阻止了剪贴板访问。"
+  },
+  "copyError": {
+    "message": "无法复制工作项。"
+  },
+  "unknownError": {
+    "message": "未知错误。"
+  },
+  "apiError": {
+    "message": "Azure API 返回 HTTP $1。"
+  },
+  "projectError": {
+    "message": "无法从 URL 识别项目。"
+  },
+  "project": {
+    "message": "项目"
+  },
+  "currentProject": {
+    "message": "当前项目"
+  },
+  "subtitle": {
+    "message": "Azure DevOps 工具"
+  },
+  "modules": {
+    "message": "模块"
+  },
+  "copyTask": {
+    "message": "在工作项中复制"
+  },
+  "copyTaskHelp": {
+    "message": "从打开的工作项生成提交信息。"
+  },
+  "copyPr": {
+    "message": "在 PR 中复制"
+  },
+  "copyPrHelp": {
+    "message": "复制链接到拉取请求的工作项。"
+  },
+  "projects": {
+    "message": "显示项目"
+  },
+  "projectsHelp": {
+    "message": "选择关联项时显示所属项目。"
+  },
+  "loading": {
+    "message": "正在加载设置…"
+  },
+  "refreshHint": {
+    "message": "更改选项后，请先保存 Azure 中的工作，再刷新页面以应用。"
+  },
+  "updates": {
+    "message": "更新"
+  },
+  "autoUpdates": {
+    "message": "商店版本由浏览器自动更新。"
+  },
+  "checkUpdate": {
+    "message": "检查更新"
+  },
+  "checking": {
+    "message": "正在查询浏览器更新服务…"
+  },
+  "available": {
+    "message": "有可用更新。请关闭面板以完成更新，然后刷新 Azure。"
+  },
+  "throttled": {
+    "message": "浏览器最近已检查过。请稍后重试；自动更新仍然启用。"
+  },
+  "noUpdate": {
+    "message": "没有可用更新。新版本需通过商店审核。本地安装请按下方说明操作。"
+  },
+  "updateError": {
+    "message": "无法检查更新。请在 edge://extensions 中更新商店版本，或替换本地文件后重新加载。"
+  },
+  "localInstall": {
+    "message": "从文件夹安装？"
+  },
+  "localHelp": {
+    "message": "将新文件解压到原安装文件夹。在 edge://extensions（或 chrome://extensions）中重新加载扩展，然后刷新 Azure。无需卸载。"
+  },
+  "saved": {
+    "message": "设置已保存。请刷新 Azure 以应用。"
+  },
+  "saveError": {
+    "message": "无法保存。请重试。"
+  },
+  "choose": {
+    "message": "选择要使用的模块。"
+  },
+  "loadError": {
+    "message": "无法加载设置。"
+  },
+  "description": {
+    "message": "Azure DevOps 模块化工具：复制提交信息，并在选择关联工作项时显示项目。"
+  },
+  "extensionName": {
+    "message": "Toolkit for Azure DevOps"
+  }
+}

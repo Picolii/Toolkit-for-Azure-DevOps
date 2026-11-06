@@ -1,0 +1,119 @@
+{
+  "copy": {
+    "message": "タスクをコピー"
+  },
+  "copying": {
+    "message": "コピー中…"
+  },
+  "copied": {
+    "message": "コピーしました！"
+  },
+  "titleError": {
+    "message": "作業項目のタイトルを取得できませんでした。"
+  },
+  "tagsError": {
+    "message": "作業項目にタグを1つ以上追加してください。コミットはコピーされていません。"
+  },
+  "idError": {
+    "message": "作業項目のIDを特定できませんでした。"
+  },
+  "clipboardError": {
+    "message": "ブラウザーがクリップボードへのアクセスをブロックしました。"
+  },
+  "copyError": {
+    "message": "作業項目をコピーできませんでした。"
+  },
+  "unknownError": {
+    "message": "不明なエラー。"
+  },
+  "apiError": {
+    "message": "Azure API が HTTP $1 を返しました。"
+  },
+  "projectError": {
+    "message": "URLからプロジェクトを特定できませんでした。"
+  },
+  "project": {
+    "message": "プロジェクト"
+  },
+  "currentProject": {
+    "message": "現在のプロジェクト"
+  },
+  "subtitle": {
+    "message": "Azure DevOps 用ツール"
+  },
+  "modules": {
+    "message": "モジュール"
+  },
+  "copyTask": {
+    "message": "作業項目でコピー"
+  },
+  "copyTaskHelp": {
+    "message": "開いている作業項目からコミットメッセージを作成。"
+  },
+  "copyPr": {
+    "message": "PRでコピー"
+  },
+  "copyPrHelp": {
+    "message": "PRにリンクされた作業項目をコピー。"
+  },
+  "projects": {
+    "message": "プロジェクトを表示"
+  },
+  "projectsHelp": {
+    "message": "リンク選択時にプロジェクトを識別。"
+  },
+  "loading": {
+    "message": "設定を読み込み中…"
+  },
+  "refreshHint": {
+    "message": "設定を変更した後、Azureで作業を保存してページを再読み込みしてください。"
+  },
+  "updates": {
+    "message": "更新"
+  },
+  "autoUpdates": {
+    "message": "ストア版はブラウザーによって自動更新されます。"
+  },
+  "checkUpdate": {
+    "message": "更新を確認"
+  },
+  "checking": {
+    "message": "ブラウザーの更新サービスを確認中…"
+  },
+  "available": {
+    "message": "更新があります。このパネルを閉じて更新を完了し、Azureを再読み込みしてください。"
+  },
+  "throttled": {
+    "message": "最近確認済みです。しばらくしてからお試しください。自動更新は有効です。"
+  },
+  "noUpdate": {
+    "message": "利用可能な更新はありません。新しいバージョンにはストアの承認が必要です。ローカル版は下の手順をご覧ください。"
+  },
+  "updateError": {
+    "message": "確認できません。edge://extensionsでストア版は更新、ローカル版はファイル置換後に再読み込みしてください。"
+  },
+  "localInstall": {
+    "message": "フォルダーからインストールしましたか？"
+  },
+  "localHelp": {
+    "message": "新しいファイルを同じフォルダーに展開し、edge://extensions（またはchrome://extensions）で再読み込みをクリックしてAzureを再読み込みしてください。削除は不要です。"
+  },
+  "saved": {
+    "message": "設定を保存しました。Azureを再読み込みしてください。"
+  },
+  "saveError": {
+    "message": "保存できませんでした。再試行してください。"
+  },
+  "choose": {
+    "message": "使用するモジュールを選択してください。"
+  },
+  "loadError": {
+    "message": "設定を読み込めませんでした。"
+  },
+  "description": {
+    "message": "Azure DevOps 用モジュール式ツール：コミットのコピーと関連作業項目のプロジェクト表示。"
+  },
+  "extensionName": {
+    "message": "Toolkit for Azure DevOps"
+  }
+}

@@ -2,6 +2,7 @@
 (async () => {
   const modules = await (globalThis.azureToolsModulesReady || {});
   if (modules.projects === false) return;
+  const t = globalThis.toolkitText || ((key) => key);
   const CLASS = 'ado-related-project';
   const cache = new Map();
   let scheduled = false;
@@ -71,7 +72,7 @@
     const own = Boolean(current) && project.toLowerCase() === current.toLowerCase();
     const text = own ? `★ ${project}` : project;
     if (badge.textContent !== text) badge.textContent = text;
-    badge.title = `Projeto: ${project}${own ? ' · Projeto atual' : ''}`;
+    badge.title = `${t('project')}: ${project}${own ? ' · ' + t('currentProject') : ''}`;
     badge.style.color = own ? 'var(--communication-foreground, #0078d4)' : 'inherit';
   }
 
