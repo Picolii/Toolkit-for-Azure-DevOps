@@ -1,11 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "Copy Task for Azure DevOps",
-  "version": "1.1.2",
-  "description": "Copia work items como commits e identifica projetos na seleção de vínculos do Azure DevOps.",
+  "name": "Picolii Toolkit for Azure DevOps",
+  "version": "1.1.3",
+  "description": "Modular productivity tools for Azure DevOps: commit copying, project labels, and workflow shortcuts.",
   "permissions": ["storage"],
   "action": {
-    "default_title": "Copy Task — módulos",
+    "default_title": "Picolii Toolkit — módulos",
     "default_popup": "popup.html"
   },
   "icons": {

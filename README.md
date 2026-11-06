@@ -1,8 +1,8 @@
-# Copy Task for Azure DevOps
+# Picolii Toolkit for Azure DevOps
 
-Version **1.1.2**
+Version **1.1.3**
 
-Use automatic compact project label widths
+Rename extension to Picolii Toolkit
 
 ## Features
 
@@ -10,7 +10,7 @@ System.Object[]
 
 ## Install and update
 
-Use the archived package [dist/copy-task-for-azure-devops-1.1.2.zip](dist/copy-task-for-azure-devops-1.1.2.zip), or load the repository folder in developer mode at edge://extensions or chrome://extensions.
+Use the archived package [dist/picolii-toolkit-for-azure-devops-1.1.3.zip](dist/picolii-toolkit-for-azure-devops-1.1.3.zip), or load the repository folder in developer mode at edge://extensions or chrome://extensions.
 For local updates, replace files in the same installation folder, reload the extension and refresh Azure. Store installations receive approved updates through the browser.
 
 ## Privacy and support
