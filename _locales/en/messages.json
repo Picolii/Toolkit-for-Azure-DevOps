@@ -115,5 +115,11 @@
   },
   "extensionName": {
     "message": "Toolkit for Azure DevOps"
+  },
+  "language": {
+    "message": "Language"
+  },
+  "automatic": {
+    "message": "Automatic — browser language"
   }
 }

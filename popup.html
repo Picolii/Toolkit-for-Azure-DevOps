@@ -11,6 +11,22 @@
 <body>
   <header><img src="icons/icon-48.png" alt="" width="40" height="40"><div><h1>Toolkit</h1><p data-i18n="subtitle">Tools for Azure DevOps</p></div></header>
   <main>
+    <div class="language-setting">
+      <label for="language" data-i18n="language">Language</label>
+      <select id="language" disabled>
+        <option value="auto" data-i18n="automatic">Automatic — browser language</option>
+        <option value="pt_BR">Português (Brasil)</option>
+        <option value="pt_PT">Português (Portugal)</option>
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="fr">Français</option>
+        <option value="it">Italiano</option>
+        <option value="de">Deutsch</option>
+        <option value="ja">日本語</option>
+        <option value="ko">한국어</option>
+        <option value="zh_CN">简体中文</option>
+      </select>
+    </div>
     <h2 data-i18n="modules">Your modules</h2>
     <label><span><strong data-i18n="copyTask">Copy in work items</strong><small data-i18n="copyTaskHelp"></small></span><input type="checkbox" id="copyTask" disabled></label>
     <label><span><strong data-i18n="copyPr">Copy in pull requests</strong><small data-i18n="copyPrHelp"></small></span><input type="checkbox" id="copyPr" disabled></label>

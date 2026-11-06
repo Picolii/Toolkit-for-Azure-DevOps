@@ -1,11 +1,16 @@
 (() => {
   const t = globalThis.toolkitText;
-  document.documentElement.lang = chrome.i18n?.getUILanguage() || 'en';
-  document.title = t('extensionName');
-  document.querySelectorAll('[data-i18n]').forEach((element) => {
-    element.textContent = t(element.dataset.i18n);
-  });
-  document.querySelector('.updates')?.setAttribute('aria-label', t('updates'));
+  function translatePanel() {
+    const language = globalThis.toolkitLanguage();
+    document.documentElement.lang = language === 'auto'
+      ? chrome.i18n?.getUILanguage() || 'en' : language.replace('_', '-');
+    document.title = t('extensionName');
+    document.querySelectorAll('[data-i18n]').forEach((element) => {
+      element.textContent = t(element.dataset.i18n);
+    });
+    document.querySelector('.updates')?.setAttribute('aria-label', t('updates'));
+  }
+  translatePanel();
   const ids = ['copyTask', 'copyPr', 'projects'];
   const status = document.getElementById('status');
   const updateButton = document.getElementById('check-update');
@@ -33,6 +38,30 @@
   }
   async function init() {
     try {
+      await globalThis.toolkitLanguageReady;
+      translatePanel();
+      const languageSelect = document.getElementById('language');
+      if (languageSelect) {
+        languageSelect.value = globalThis.toolkitLanguage();
+        languageSelect.disabled = false;
+        languageSelect.addEventListener('change', async () => {
+          const previous = globalThis.toolkitLanguage();
+          const choice = languageSelect.value;
+          languageSelect.disabled = true;
+          try {
+            await chrome.storage.local.set({ language: choice });
+            globalThis.toolkitSetLanguage(choice);
+            translatePanel();
+            document.getElementById('update-status').textContent = '';
+            status.textContent = t('saved');
+          } catch {
+            languageSelect.value = previous;
+            status.textContent = t('saveError');
+          } finally {
+            languageSelect.disabled = false;
+          }
+        });
+      }
       const { modules = {} } = await chrome.storage.local.get('modules');
       for (const id of ids) {
         const input = document.getElementById(id);
