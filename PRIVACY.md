@@ -1,8 +1,8 @@
-# Privacy Policy — Copy Task for Azure DevOps
+# Privacy Policy — Toolkit for Azure DevOps
 
-Last updated: September 24, 2026
+Last updated: November 6, 2026
 
-Copy Task for Azure DevOps is a browser extension with the single purpose of formatting and copying Azure DevOps work items as standardized commit messages from work item and pull request pages.
+Toolkit for Azure DevOps (previously Copy Task for Azure DevOps) helps users work with Azure DevOps work items by copying commit messages and identifying projects in related-work selections.
 
 ## Data accessed
 
@@ -12,13 +12,13 @@ When copying a work item linked to a pull request, the extension may request tha
 
 ## How data is used
 
-The accessed information is processed locally in the browser solely to format a commit message and copy it to the clipboard after a user action.
+Information is processed locally to copy commit messages after user action and display project labels in Add link. The picker requests only System.TeamProject for result IDs from the same organization's API. Names and IDs are cached only in bounded tab memory and discarded on reload.
 
 The publisher does not receive, collect, store, sell, share, or use this information for advertising, analytics, profiling, or any purpose unrelated to the extension's stated functionality. No data is sent to publisher-controlled servers or unrelated third parties.
 
 ## Data storage and retention
 
-The extension does not maintain a user account or a remote database. Work item information and generated commit messages are not persistently stored by the extension.
+The extension does not maintain a user account or a remote database. Work item information and generated commit messages are not persistently stored. Only module enable/disable and interface language preferences are saved in chrome.storage.local on the device and are not transmitted to the publisher.
 
 ## Permissions and site access
 
@@ -32,15 +32,15 @@ This policy will be updated if the extension's data practices or functionality c
 
 For privacy questions or support, open an issue at:
 
-https://github.com/Picolii/Scripty_Azure_JS/issues
+https://github.com/Picolii/Toolkit-for-Azure-DevOps/issues
 
 ---
 
-# Política de Privacidade — Copy Task for Azure DevOps
+# Política de Privacidade — Toolkit for Azure DevOps
 
-Última atualização: 24 de setembro de 2026
+Última atualização: 6 de novembro de 2026
 
-Copy Task for Azure DevOps é uma extensão de navegador com o propósito único de formatar e copiar work items do Azure DevOps como mensagens de commit padronizadas nas páginas de work items e pull requests.
+Toolkit for Azure DevOps (anteriormente Copy Task for Azure DevOps) auxilia o trabalho com work items: copia commits e identifica projetos na seleção de vínculos.
 
 ## Dados acessados
 
@@ -50,13 +50,13 @@ Ao copiar um work item vinculado a um pull request, a extensão pode solicitar o
 
 ## Como os dados são utilizados
 
-As informações acessadas são processadas localmente no navegador exclusivamente para formatar uma mensagem de commit e copiá-la para a área de transferência após uma ação do usuário.
+As informações são processadas localmente para copiar commits após uma ação do usuário e exibir projetos em Add link. O seletor consulta somente System.TeamProject dos IDs dos resultados na API da própria organização. Nomes e IDs ficam em cache limitado na memória da aba e são descartados ao recarregar.
 
 O desenvolvedor não recebe, coleta, armazena, vende, compartilha nem utiliza essas informações para publicidade, análise, criação de perfis ou qualquer finalidade que não esteja relacionada à funcionalidade declarada da extensão. Nenhum dado é enviado a servidores controlados pelo desenvolvedor ou a terceiros não relacionados.
 
 ## Armazenamento e retenção
 
-A extensão não mantém contas de usuário nem banco de dados remoto. As informações dos work items e as mensagens de commit geradas não são armazenadas de forma persistente pela extensão.
+A extensão não mantém contas de usuário nem banco de dados remoto. Informações dos work items e commits não são armazenadas de forma persistente. Somente preferências de ativação dos módulos e idioma da interface são salvas em chrome.storage.local no dispositivo, sem transmissão ao desenvolvedor.
 
 ## Permissões e acesso a sites
 
@@ -70,4 +70,4 @@ Esta política será atualizada caso as práticas de dados ou as funcionalidades
 
 Para dúvidas sobre privacidade ou suporte, abra uma issue em:
 
-https://github.com/Picolii/Scripty_Azure_JS/issues
+https://github.com/Picolii/Toolkit-for-Azure-DevOps/issues
