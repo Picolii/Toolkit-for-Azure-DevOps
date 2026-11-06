@@ -1,6 +1,7 @@
 :root { color-scheme: light dark; font-family: 'Segoe UI', sans-serif; }
 body { width: 340px; margin: 0; background: light-dark(#f7f9fc, #171e29); color: light-dark(#182235, #eef3fc); }
 header { display:flex; gap:12px; align-items:center; padding:20px; border-bottom:1px solid #80808040; }
+header img { flex-shrink:0; object-fit:contain; }
 h1 { font-size:20px; margin:0; } header p { font-size:12px; margin:4px 0 0; opacity:.75; }
 main { padding:16px 20px; } h2 { font-size:12px; text-transform:uppercase; letter-spacing:.08em; opacity:.7; margin:0 0 12px; }
 label { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:14px 0; border-bottom:1px solid #80808030; cursor:pointer; }
